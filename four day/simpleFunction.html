@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <script>
+        function calc(one, two){
+            alert(one + two);
+        }   
+
+        var test = function(){
+            console.log("ㅠㅠ");
+        }
+
+        var exam = () => {
+            console.log("새로운 선언방식 입니다.");
+        }
+
+        function plus(){
+            var one = document.getElementById("one").value;
+            var two = document.getElementById("two").value;
+
+            calc(parseInt(one), parseInt(two));
+        }
+     
+        calc(); // 명확하게 함수의 이름을 지정해서 호출하는 방법
+        test(); // 함수처럼 호출해야 함 
+        exam(); // Lambda expression
+
+    </script>
+    <body>
+
+        <input type="text" id="one" />
+        <input type="text" id="two" />
+
+        <button onclick="plus()">계산하세요</button>
+
+    </body>
+</html>
