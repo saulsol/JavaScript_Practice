@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <script>
+        
+        for(var i = 2; i<=100; i++){
+
+            var isSosu = true;
+            
+            for(var j = 2; j < i; j++){
+                if(i % j ==0){
+                    isSosu = false;
+                    break; // 소수가 아니다. 
+                }
+            }
+            
+            if(isSosu == true){
+                console.log(i);
+            }
+
+        }
+
+       
+    </script>
+    <body>
+
+    </body>
+</html>
