@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <script>
+      var student = function(name, kor, eng, his, math){
+
+        this.name = name;
+        this.kor = kor;
+        this.eng = eng;
+        this.his = his;
+        this.math = math;
+      };
+
+      student.prototype.getSum = function(){
+        return this.kor + this.eng + this.his + this.math;
+      }
+
+      student.prototype.getAvg = function (){
+        return this.getSum() / 4;
+      }
+
+      const kim = new student("김춘추", 90, 80, 70, 100);
+
+      let studentList = [
+        new student("BABO1", 90, 80, 70, 60),
+        new student("BABO2", 90, 80, 70, 60),
+        new student("BABO3", 90, 80, 70, 60)
+
+      ];
+
+
+      for(var i = 0; i < studentList.length; i++ ){
+        console.log(studentList[i].name);
+        console.log(studentList[i].getSum());
+        console.log(studentList[i].getAvg());
+      }
+
+
+    </script>
+    <body>
+
+    </body>
+</html>  
