@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <script>
+        // 컴퓨터는 0, 1, 2 세개의 숫자 중 하나를 난수발생시켜서 변수에 저장
+        // (0 : 가위, 1 : 바위, 2 : 보)
+
+        function game(){
+            var customNumber = document.getElementById("custom").value;
+
+            // 사용자가 입력한 값과 컴퓨터가 저장해 놓은 값을 비교하여 승패를 출력한다. 
+        }
+
+
+    </script>
+    <body>
+        <input type = "text" id="custom" />
+        <button onclick="game()">가위 바위 보!!!</button>
+
+    </body>
+</html>
