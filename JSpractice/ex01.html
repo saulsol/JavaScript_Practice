@@ -2,17 +2,38 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <script>
-        alert('hello javascript');
-    </script>
- 
+   
 
 </head>
 <body>
     <script>
         document.body.innerHTML = "<h1>안녕하세요</h1>"
+
+
+        let v = "hello"
+        let v2 = "hi"
+
+        const value = "5"
+        const value1 = 5
+
+        console.log(v[0])
+        // 이런식으로 문자열을 간단하게 출력할 수 있다. 
+
+        console.log(v.length + "개")
+        
+        console.log("엄격하지 않은 비교 "+value == value1) // 같다, 사용하지 않는 것이 좋다
+        console.log("엄격한 비교 "+value === value1) // 다르다 (타입체크 까지 한다.)
+        
+
+        console.log(typeof("10"))
+        console.log(typeof(10))
+        console.log(typeof 10)
+
+        
+
+
     </script>
-    
+
     
 </body>
 </html>
