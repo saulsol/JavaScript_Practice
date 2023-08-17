@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        
+
+        function randerValue1(){
+            let vlaue = document.getElementById("button1").firstChild.nodeValue
+            console.log(vlaue)
+            document.getElementById("span1").firstChild.nodeValue = vlaue
+            
+        }
+
+        function randerValue2(){
+            let vlaue = document.getElementById("button2").firstChild.nodeValue
+            console.log(vlaue)
+            document.getElementById("span2").firstChild.nodeValue = vlaue
+            
+        }
+        function randerValue3(){
+            let vlaue = document.getElementById("button3").firstChild.nodeValue
+            console.log(vlaue)
+            document.getElementById("span3").firstChild.nodeValue = vlaue
+           
+        }
+        function randerValue4(){
+            let vlaue = document.getElementById("button4").firstChild.nodeValue
+            console.log(vlaue)
+            document.getElementById("span4").firstChild.nodeValue = vlaue
+           
+        }
+        function randerValue5(){
+            let vlaue = document.getElementById("button5").firstChild.nodeValue
+            console.log(vlaue)
+           
+        }
+
+        function cleared(){
+            document.getElementById("span1").firstChild.nodeValue = " "
+            document.getElementById("span2").firstChild.nodeValue = " "
+            document.getElementById("span3").firstChild.nodeValue = " "
+            document.getElementById("span4").firstChild.nodeValue = " "
+
+        }
+
+
+    </script>
+   
+
+</head>
+<body>
+    
+    <button id="button1" onclick="randerValue1()">Click1</button>
+    <button id="button2" onclick="randerValue2()">Click2</button>
+    <button id="button3" onclick="randerValue3()">Click3</button>
+    <button id="button4" onclick="randerValue4()">Click4</button>
+    <button id="clear" onclick="cleared()">Clear</button>
+
+    <br>
+
+    <span id="span1"> </span><span id="span2"> </span> <span id="span3"> </span> <span id="span4"> </span>
+   
+
+</body>
+</html>
