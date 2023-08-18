@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [5, 25, 10];
+
+        document.writeln("sort() : "+ array.sort() + "<br>"); 
+        // 유니코드 순으로 정렬, 
+
+        document.writeln("reverse() : "+ array.reverse() + "<br>");
+
+
+        document.writeln(array.sort(
+
+            function(x, y){
+                return x-y; // 오름차순
+            }
+
+        ) + "</br>");
+
+           
+        
+
+
+         document.writeln(array.sort(
+
+            function(x, y){
+                return y-x; // 내림차순
+            }
+        ));
+
+
+
+    </script>
+
+
+
+</body>
+</html>
