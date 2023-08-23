@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+   
+
+    <script>
+        function selectionSort(arr){
+
+            for(let i=0; i<arr.length -1; i++ ){
+
+                let minIndex =i;
+
+                for(let j=i+1; j<arr.length; j++ ){
+                    if(arr[minIndex] > arr[j]){
+                        minIndex=j
+                    }    
+
+                }
+
+                if(minIndex !== i){
+                    [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
+                }
+
+            }
+
+            return print(arr); 
+        }
+
+
+        function print(arr){
+            document.writeln(arr)
+        }
+
+
+
+
+        const array = [88, 67, 97, 34, 29, 100, 78, 66]
+
+        document.writeln(array + "<br>") 
+
+        
+    </script>
+
+<button onclick="selectionSort(array)">selection</button>
+<button>bubble</button>
+
+
+</body>
+</html>
