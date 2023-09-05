@@ -35,6 +35,9 @@
             padding: 0;
             overflow: hidden;
         }
+        #navbar ul:hover{
+            color: rgb(255, 255, 255);
+        }
 
         #navbar li {
             float: left;
@@ -65,12 +68,16 @@
 
         label, input {
             display: block;
+            width: 500px;
+            height: 40px;
+            align-items: center;
+            margin: 0 auto;
             margin-bottom: 10px;
             font-family: 'Noto Serif KR', serif;
+            border-radius: 10px;
         }
 
         input[type="submit"] {
-            margin-left: 150px; /* 오른쪽 마진 추가 */
         }
 
         li{
@@ -93,9 +100,9 @@
   
     <form>
         <label for="username">사용자 이름:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required placeholder="아이디">
         <label for="password">비밀번호:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required placeholder="비밀번호">
         <input type="submit" value="로그인">
     </form>
     <h2>환영합니다</h2>
