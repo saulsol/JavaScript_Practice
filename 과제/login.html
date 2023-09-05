@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            margin-left : 120px; /* 오른쪽 마진 추가 */
+        }
+    </style>
+</head>
+<body>
+    <h2>로그인</h2>
+    <form>
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>
