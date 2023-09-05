@@ -2,40 +2,132 @@
 <html>
 <head>
     <title>로그인</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <style>
-        body {
-            text-align: center;
+        h2 {
+            font-family: 'Noto Serif KR', serif;
+            margin-top: 150px;
         }
 
-        h2 {
+        body {
+            text-align: center;
+            background-color: #f5ebf0; /* 연분홍색 배경 색상 */
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            background-color: #ff0044;
+            transition: height 0.3s;
+            overflow: hidden;
+        }
+
+        #navbar:hover {
+            height: 50px; /* 마우스를 올렸을 때 높이 변경 */
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #navbar li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+
+        img#img_s {
             margin-top: 20px;
+        }
+        img#img {
+            margin-top: 200px;
         }
 
         form {
             display: inline-block;
             text-align: left;
-            margin-top: 20px;
         }
 
         label, input {
             display: block;
             margin-bottom: 10px;
+            font-family: 'Noto Serif KR', serif;
         }
+
         input[type="submit"] {
-            margin-left : 120px; /* 오른쪽 마진 추가 */
+            margin-left: 150px; /* 오른쪽 마진 추가 */
+        }
+
+        li{
+            font-family: 'Noto Serif KR', serif;
         }
     </style>
 </head>
 <body>
-    <h2>로그인</h2>
+    <div id="navbar" style="font-size: 30px;">
+        <ul>
+            <li>점포 안내</li>
+            <li>쇼핑 정보</li>
+            <li>신세계 브랜드</li>
+            <li>아트&컬쳐</li>
+            <li>매거진</li>
+        </ul>
+    </div>
+    <img src="../image/Shinsegae_logo.svg.png" id="img_s" style="width: 890px; height: 200px">
+    <h2>조금 더 특별해지고 싶은 당신을 위해</h2>
+  
     <form>
         <label for="username">사용자 이름:</label>
         <input type="text" id="username" name="username" required>
-
         <label for="password">비밀번호:</label>
         <input type="password" id="password" name="password" required>
-
         <input type="submit" value="로그인">
     </form>
+    <h2>환영합니다</h2>
+    <h4></h4>
+
+    <script>
+        // JavaScript로 네비게이션 바 높이 변경
+        const navbar = document.getElementById('navbar');
+        navbar.style.height = '50px'; // 초기 높이 설정
+
+        navbar.addEventListener('mouseenter', () => {
+            navbar.style.height = '100px'; // 마우스를 올렸을 때 높이 변경
+        });
+
+        navbar.addEventListener('mouseleave', () => {
+            navbar.style.height = '50px'; // 마우스를 떼었을 때 원래 높이로 돌아감
+        });
+    </script>
+
+    <img src="../image/건설.svg" id="img" style="width: 100px; height: 100px">
+
+  
+    <img src="../image/신세계 인터네셔널.svg" id="img" style="width: 150px; height: 100px">
+    <img src="../image/신세계 한긓.svg" id="img" style="width: 100px; height: 100px">
+   
+    <img src="../image/food.svg" id="img" style="width: 100px; height: 100px">
+ 
+
+    <img src="../image/casa.svg" id="img" style="width: 200px; height: 100px">
+
+   
+
+
 </body>
 </html>
