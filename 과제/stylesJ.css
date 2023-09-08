@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f09c9c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Noto Serif KR', serif;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cart, .products {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+ h2{
+    font-family: 'Noto Serif KR', serif;
+ }
+
+ .advertisement {
+    float: right;
+    width: 300px; /* 원하는 너비로 조절하세요 */
+    margin: 20px;
+}

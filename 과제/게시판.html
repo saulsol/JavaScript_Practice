@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 목록</title>
+    <style>
+        /* CSS 스타일링을 여기에 추가하세요 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #fddfdf;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e98686;
+        }
+
+        /* 열의 너비 조절 */
+        th:first-child, td:first-child {
+            width: 30%; /* 첫 번째 열의 너비 조절 */
+        }
+        th:last-child, td:last-child {
+            width: 70%; /* 두 번째 열의 너비 조절 */
+        }
+
+        /* 이미지를 가운데로 정렬하는 스타일 */
+        #img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* 이미지와 게시판 사이의 간격을 조절합니다. */
+        }
+
+        #img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>쇼핑몰 게시판</h1>
+    
+    <!-- 게시물 목록 테이블 -->
+    <table>
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>게시물 제목 1</td>
+                <td>게시물 내용 1</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>게시물 내용 2</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>게시물 내용 2</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>게시물 내용 2</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>게시물 내용 2</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>게시물 내용 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 이미지를 가운데로 정렬하기 위한 컨테이너 추가 -->
+    <div id="img-container">
+        <img src="../image/신세계 한긓.svg" id="img" style="width: 100px; height: 100px">
+    </div>
+
+    <script>
+        // JavaScript 코드를 사용하여 게시물 데이터를 동적으로 로드하는 부분을 추가하세요.
+        // 이 예제에서는 정적인 데이터를 사용하고 있으므로 실제 데이터를 가져오는 방법에 따라서 다를 수 있습니다.
+    </script>
+</body>
+</html>
+
+
+
