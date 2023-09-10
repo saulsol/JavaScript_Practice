@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원가입</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        form{ 
+            text-align: center;
+        }
+        table{
+            text-align: center;
+            margin: auto; /* 가로 중앙 정렬 */
+        }
+            
+            
+
+    </style>
+
+</head>
+<body>
+    <h2>◎ 회원가입 ◎</h2>
+    <form action="원가입_처리.php" method="post">
+        <table border="1">
+            <tr><td colspan="2">◈기본정보◈</td></tr>
+            <tr>
+                <td><label for="userId">아이디:</label></td>
+                <td><input id="userId" type="text" name="userId" required></td>
+            </tr>
+            <tr>
+                <td><label for="userPass">비밀번호:</label></td>
+                <td><input id="userPass" type="password" name="userPass" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmPass">비밀번호 확인:</label></td>
+                <td><input id="confirmPass" type="password" name="confirmPass" required></td>
+            </tr>
+            <tr><td colspan="2">◈개인신상정보◈</td></tr>
+            <tr>
+                <td><label for="email">E-Mail:</label></td>
+                <td>
+                    <input type='text' name="email">@
+                      <select name="emailaddr">
+                         <option value="">직접입력</option>
+                         <option value="daum.net">daum.net</option>
+                         <option value="gmail.com">gmail.com</option>
+                         <option value="naver.com">naver.com</option>
+                         
+                      </select>
+                    </td>
+            </tr>
+            <tr>
+                <td><label for="koreanName">한글 이름:</label></td>
+                <td><input id="koreanName" type="text" name="koreanName" required></td>
+            </tr>
+            <tr>
+                <td><label for="residentNumber">주민등록번호:</label></td>
+                <td><input id="JUMIN_first" type="text">-<input id="JUMIN_last" type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="birthDate">실제 생년월일:</label></td>
+                <td><input id="birthDate" type="date" name="birthDate" required></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">전화번호:</label></td>
+                <td><select name="emailaddr">
+                    <option value="">직접입력</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="naver.com">naver.com</option>
+                    
+                 </select> - 
+                 <input id="phoneNumber" type="tel" name="phoneNumber" required> -
+                 <input id="phoneNumber" type="tel" name="phoneNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="zipcode">우편번호:</label></td>
+                <td><input id="zipcode" type="text" name="zipcode"></td>
+            </tr>
+            <tr>
+                <td><label for="address">주소:</label></td>
+                <td><input id="address" type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" value="확인"> <input type="reset" value="취소"></td>
+                
+            </tr>
+        </table>
+       
+    </form>
+</body>
+</html>
