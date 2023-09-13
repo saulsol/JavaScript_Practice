@@ -9,10 +9,10 @@
 
         function gallery(direct){
             if(direct){
-                if(num==2) return; 
+                if(num==3) num=1; 
                 num ++; 
             }else{
-                if(num==1) return; 
+                if(num==1) ; 
                 num --;
             }
 
@@ -27,8 +27,9 @@
     <div id="galleryZone">
         <p><img src="../image/pic_1.jpg" id="photo" alt=""></p>
         <p>
-            <button onclick="gallery(1)">다음</button>
+            
             <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
         </p>
 
     </div>
