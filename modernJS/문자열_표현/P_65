@@ -1,0 +1,6 @@
+var first = 'LIM'; 
+var last = 'SOL';
+
+console.log(`name is ${first + last}`);
+// 백틱으로 감쌌다. 
+
