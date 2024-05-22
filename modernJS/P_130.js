@@ -15,3 +15,10 @@ var person = {
 
 console.log(person.name);
 console.log(person['name']);
+
+person.name = 'Kim';
+console.log(person.name);
+
+// 동적 프로퍼티 생성 
+person.age = 30; // 매우 간단하게 동적 프로퍼티를 생성하였다 
+console.log(person); 
