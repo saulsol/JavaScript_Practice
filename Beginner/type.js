@@ -1,0 +1,10 @@
+console.log('1) ' + (typeof null)); 
+console.log('2) ' + (typeof undefined)); 
+console.log('3) ' + (null === undefined)); 
+console.log('4) ' + (null == undefined)); 
+console.log('5) ' + (null === null));
+console.log('6) ' + (null == null));  
+console.log('7) ' + (!null));
+console.log('8) ' + (isNaN(1 + NaN)));
+console.log('9) ' + (isNaN(1 + undefined)));
+console.log('10) ' + (isNaN(1 + null)));    
