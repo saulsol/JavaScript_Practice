@@ -16,3 +16,4 @@ function filter( key, value){
 
 const strFilteredObject = JSON.stringify(obj, filter, 2);
 console.log(typeof strFilteredObject, strFilteredObject);  
+
