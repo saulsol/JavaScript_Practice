@@ -1,0 +1,18 @@
+const class1 = {
+    a: 1, b: 'A', c: true
+}
+
+const class2 = {
+    d: {x: 10, y: 100}, e: [1,2,30]
+}
+
+const class3 = {
+    ...class1, z: 0
+}
+
+const class4 = {
+    ...class2, ...class3, ...class2.d
+}
+
+console.log(class3); 
+console.log(class4); 
