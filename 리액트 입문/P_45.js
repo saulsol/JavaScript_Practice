@@ -32,3 +32,4 @@ const func5 = (value1, value2) => (
 )
 
 console.log(func5("안녕", "hi"));
+
