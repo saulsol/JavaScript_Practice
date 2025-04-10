@@ -17,3 +17,16 @@ console.log(arr3);
 // 스프레드 구문을 이용해 새로운 배열 생성
 const arr4 = [10, 20];
 const arr5 = [30, 40];
+
+const arr6 = [...arr4, ...arr5];
+console.log(arr6);
+
+// 여러 객체 결합
+const obj1 = {val1: 10, val2: 20}
+const obj2 ={val3: 20, val:40}
+
+// 스프레드 구문을 이용하여 복사
+const obj3 = {...obj1};
+const obj4 = {...obj1, ...obj2};
+
+console.log(obj4);
