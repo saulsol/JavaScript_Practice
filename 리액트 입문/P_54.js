@@ -19,6 +19,7 @@ const arr4 = [10, 20];
 const arr5 = [30, 40];
 
 const arr6 = [...arr4, ...arr5];
+const arr7 = [...arr4];
 console.log(arr6);
 
 // 여러 객체 결합
@@ -30,3 +31,7 @@ const obj3 = {...obj1};
 const obj4 = {...obj1, ...obj2};
 
 console.log(obj4);
+
+
+// 스프레드 구문을 통한 새로운 배열 생성
+
